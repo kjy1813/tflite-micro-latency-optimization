@@ -217,7 +217,7 @@ RUN_DONE
 
 ## Notes / Limitations
 
-- **Original coursework vs. portfolio cleanup.** Everything under `firmware/`, `tflm_patches/`, `platform/`, and `model/` is the original submission, byte-for-byte except for one rename (the sketch's student-ID suffix was dropped to give `proj2_final_best.ino`, with the containing folder renamed to match, as Arduino requires). `README.md`, `docs/`, `scripts/`, `assets/`, `LICENSE`, and `.gitignore` were added afterwards for publication.
+- **Original coursework vs. portfolio cleanup.** Everything under `firmware/`, `tflm_patches/`, `platform/`, and `model/` is the original submission, byte-for-byte except for two cleanups: the sketch's student-ID suffix was dropped to give `proj2_final_best.ino` (folder renamed to match, as Arduino requires), and an unused seed constant holding a student ID was removed from `test_images_30.h` (the selected indices are hard-coded, so behavior is unchanged). `README.md`, `docs/`, `scripts/`, `assets/`, `LICENSE`, and `.gitignore` were added afterwards for publication.
 - The MNIST model and its C-array header were provided by the course and are included only so the sketch builds. The pair-major packed filter headers are derived from that model's weights (no values changed, only reordered).
 - The baseline sketch, the intermediate ~136 ms build, and the rejected 92.51 ms build are not part of the submission archive and are therefore not included. Their behavior is described in `docs/optimization_history.md`.
 - Raw Serial benchmark logs were not retained; results are quoted from the final report.
