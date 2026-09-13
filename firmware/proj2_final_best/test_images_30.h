@@ -10,7 +10,8 @@ struct TestImage28x28 {
 
 constexpr int kNumTestImages = 30;
 
-constexpr int kMnistRandomSeed = 202127155;
+// Portfolio cleanup: the unused RNG-seed constant (a student ID) was removed; the
+// selected MNIST indices below are hard-coded and unaffected.
 
 const int kSelectedMnistIndices[kNumTestImages] = {
   7014, 2542, 9394, 247, 4043, 4359, 3914, 4596, 4901, 9060, 4037, 6873, 4277, 1338, 2174, 4149, 3689, 7868, 792, 7428, 2249, 2191, 815, 2178, 6232, 7263, 2334, 7946, 5871, 44
